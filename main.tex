@@ -1,0 +1,119 @@
+\documentclass[11pt,a4paper,boxed]{caspset}
+
+% set 1-inch margins in the document
+\usepackage[left=1in,right=1in,top=1.2in,bottom=1in]{geometry}
+\usepackage{amsmath,amsfonts,amsthm,amssymb}
+\usepackage{hyperref}
+\usepackage{setspace}
+\usepackage{lastpage}
+\usepackage{chngpage}
+\usepackage{soul}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{graphicx,float,wrapfig}
+\usepackage{ifthen}
+\usepackage{listings}
+\usepackage{courier}
+\usepackage{multimedia}
+\usepackage{color, soul}
+\usepackage{indentfirst}
+\usepackage{wrapfig}
+\usepackage{picinpar}
+\usepackage{xypic}
+\usepackage{fancyhdr}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{xeCJK}
+%\usepackage{fontspec}
+\setCJKmainfont[BoldFont=simhei.ttf]{simsun.ttf}
+%\setCJKsansfont{simhei.ttf}
+%\setCJKmonofont{simfang.ttf}
+
+%\setCJKmainfont{Adobe Song Std}
+%\setCJKmainfont[BoldFont=Adobe Heiti Std]{Adobe Song Std}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newlength\picwidth
+\setlength\picwidth{0.23\textwidth}
+\newlength\pichigh
+\setlength\pichigh{1.277\picwidth}
+%\graphicspath{{figures/}}
+% Homework Specific Information
+\renewcommand\refname{\bf 参考文献}
+\renewcommand\contentsname{\bf 目 \ \ \ 录}
+\renewcommand\figurename{\bf 图}
+\renewcommand\tablename{\bf 表}
+
+%\newtheorem{dingyi}{\bf 定义~}[section]
+%\newtheorem{dingli}{\bf 定理~}[section]
+%\newtheorem{yinli}[dingli]{\bf 引理~}
+%\newtheorem{tuilun}[dingli]{\bf 推论~}
+%\newtheorem{mingti}[dingli]{\bf 命题~}
+
+
+\newcommand{\hmwkTitle}{现代力学研究与进展报告}
+\newcommand{\hmwkSubTitle}{现代力学研究与进展报告} % No subtitle, so this will be excluded
+\newcommand{\hmwkDueDate}{\today}
+\newcommand{\hmwkClass}{现代力学研究与进展报告}
+\newcommand{\hmwkClassTime}{Tue./Thu.{~}13:30}
+\newcommand{\hmwkClassInstructor}{}
+\newcommand{\hmwkAuthorName}{周吕文}
+
+\hypersetup{pdfauthor={\hmwkAuthorName}, 
+            pdftitle={现代力学研究与进展报告}, 
+            pdfsubject={\hmwkTitle, \hmwkClassInstructor},
+            pdfkeywords={现代力学研究与进展报告},
+            pdfproducer={XeLateX with hyperref},
+            pdfcreator={Xelatex}}
+
+%% Setup the header and footer
+\pagestyle{fancy}                                                       %
+\lhead{\hmwkAuthorName}                                                 %
+\chead{\hmwkTitle}  %
+\rhead{第\ \thepage\ 页,{~} 共\ \protect\pageref{LastPage} 页}          %                                %
+\definecolor{DarkGreen}{rgb}{0.0,0.45,0.0}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\setlength{\parskip}{5pt}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% info for header block in upper right hand corner
+\name{周吕文{~}201128000718065}
+\class{流固耦合系统力学重点实验室}
+\assignment{中国科学院力学研究所}
+\duedate{2014年1月14日}
+
+\begin{document}
+
+\problemlist{\LARGE 现代力学研究与进展报告}
+
+\section{本学年听了哪几次讲座? 列出讲座名称和讲座老师.}
+本学年所听力学进展报告八次, 讲座名称及讲座老师具体如下:
+\begin{itemize}
+\item 2013年12月, 从太阳系的稳定性问题谈起, 尚在久 研究员;
+\item 2013年10月, 钱学森先生引领的成才之路, 张瑜 教授;
+\item 2013年09月, Mechanics properties of hierarchical nanostructural metals, 卢柯 研究员
+\item 2013年08月, Micromechanics and Damage - Healing Mechanisms for Heterogeneous and Composite Materials, 朱建文教授;
+\item 2013年06月, 太阳物理学观测研究中遇到的几个磁流体力学问, 汪景琇 研究员;
+\item 2013年05月, 未来的能源和燃烧研究的机遇与挑战, 琚诒光 教授
+\item 2013年04月, 界面力学: 从连续介质模型到分子尺度机理, 魏宇杰研究员
+\item 2013年03月, 关于低渗透油层中的非线性渗流问题, 黄延章 研究员
+\end{itemize}
+
+\section{听讲座后的体会}
+每次力学进展报告都让我学到不少东西, 虽然对那些陌生的领域的相关知识可能理解不多, 不过对问题的研究的思路和方法对自己的科研确实有不小的借鉴意义.
+\begin{itemize}
+\item ``从太阳系的稳定性问题谈起''报告中, 尚在久研究员主要围绕基于牛顿运动方程提出的太阳系的稳定性问题, 简要介绍了经典力学和数学的若干交叉发展历史片段, 讨论了科学如何推动数学基础理论发展，而数学的基础理论成果又如何应用于解决科学问题的.
+
+\item ``钱学森先生引领的成才之路—钱学森先生是如何办学和培养人才的''报告中，张瑜教授讲解了钱学森先生办学和培养人才的方法, 比如亲自制定教学计划, 聘请顶级的科学家为学生讲课，细心讲授星际航行理论，指导学生的科研活动, 研制小火箭等. 钱学森先生是爱国知识分子的杰出代表和光辉典范.
+卢柯研究员介绍了金属晶粒相关的只是和不同属性金属的行为: 比如strong-but-brittle行为等. 由于研究领域不是很相关所以体会较少.
+朱建文教授做了关于微观力学和复合材料损伤修复相关的精彩的报告. 介绍了关于微观力学和复合材料损伤修复的三个有创新性的研究领域. 分别是: 1）复合材料的微观损伤行为和纤维增强复合材料; 2）坑槽修补材料的革命性发展和高硬化低粘性的纳米分子材料; 3）在地质运动过程中岩土材料的弹塑性破坏和修复模型. 朱教授的讲授采用了全程英文, 所以体会较少. 不过朱教授的风采不减.
+
+\item ``太阳物理学观测研究中遇到的几个磁流体力学问题''报告中汪景琇研究员为我们介绍了太阳活动和太阳磁场研究的一些知识, 比如近年太阳活动标志性的空间观测、太阳活动和太阳磁场研究简历以及一些基本点物理问题. 目前太阳观测中遇到了三个比较重要的磁流体力学问题, 即太阳大气中三维磁场的理论外推, 三维磁场中的磁零点、拓扑构架和磁重联以及三维辐射磁流体力学数值模拟. 我们本身是力学专业, 很多天文学的知识并不了解, 汪老师为我们扩宽了思路. 《未来的能源和燃烧研究的机遇与挑战》报告中琚诒光教授介绍了美国面临的能源的选择、新型发动机技术和替代燃料给燃烧研究带来的机遇和挑战. 极限燃烧和替代燃料燃烧下有一些新的实验现象, 传统的燃烧理论具有一些局限性, 必须引入一些新的理论解释. 报告中讨论了如何建立模拟真实燃料的混合燃料模型, 并介绍实验验证的方法和航空燃料的模拟结果. 讨论了高压和替代燃料燃烧反应模型中的问题和进展,最近的中红外激光测量的实验结果. 报告最后还讨论了燃烧反应动力学研究和数值模拟的方向以及在燃烧技术中的应用.
+
+\item ``界面力学：从连续介质模型到分子尺度机理''报告中魏宇杰研究员向我们介绍了界面力学的一些知识. 现实生活中界面无处不在, 绝大部分工程材料包含诸多的界面结构. 在材料设计过程中, 界面的力学性能是关键点。理解界面对力学性能包括强度、韧性、断裂特性等的影响是物理力学和材料科学研究的重点. 魏老师着重介绍了最近出现的几种具有重要工程应用前途的特殊材料中其界面对宏观性能的影响，并介绍了现有的对于这一领域研究所采用的力学理论与方法.
+``关于低渗透油层中的非线性渗流问题''报告中黄延章研究员介绍了低渗透性油层中的非线性渗流物理基础的几个问题, 提出了新的非线性渗流方程，用试验资料对结果进行了验证, 分析了该方程的演变功能, 它可以描述各种渗流规律. 该方程的各项参数可以从实验中直接得到, 参数的物理意义也相当明确.
+\end{itemize}
+
+　　中国科学院力学研究所主办的力学进展讲座给我们提供了一个对其他研究领域的了解和对力学相关领域的学习的平台. 各位专家教授神通广大, 法力无边,极大的非富了我们的知识面.
+\end{document} 
